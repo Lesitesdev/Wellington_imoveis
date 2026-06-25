@@ -4,11 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#17352e">
-  <title>Wellington Silva Imóveis — Seu próximo lugar começa aqui</title>
-  <meta name="description" content="Imóveis selecionados para comprar, alugar e investir com segurança.">
+  <title>Wellington Silva Imóveis — Encontre o imóvel ideal para você</title>
+  <meta name="description" content="Casas, apartamentos, terrenos, lançamentos e imóveis na planta com atendimento personalizado, financiamento e segurança jurídica.">
+  <meta name="keywords" content="imobiliária, corretor, Wellington Silva, apartamentos na planta, VIC Engenharia, comprar imóvel, alugar imóvel">
+  <meta property="og:title" content="Wellington Silva Imóveis">
+  <meta property="og:description" content="Encontre o imóvel ideal para você nas melhores regiões.">
+  <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,11 +22,18 @@
       <span>Wellington Silva<small>imóveis</small></span>
     </a>
     <nav id="mainNav" aria-label="Navegação principal">
-      <a href="#inicio">Início</a><a href="#imoveis">Imóveis</a><a href="#na-planta">Na planta</a><a href="#lancamentos">Lançamentos</a><a href="#sobre">Sobre</a>
+      <a href="#inicio">Início</a>
+      <a href="#imoveis">Imóveis</a>
+      <a href="#comprar">Comprar</a>
+      <a href="#alugar">Alugar</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#blog">Blog</a>
+      <a href="#contato">Contato</a>
     </nav>
     <div class="header-actions">
       <button class="icon-button favorites-trigger" aria-label="Ver favoritos">♡ <span id="favoriteCount">0</span></button>
-      <button class="btn btn-outline admin-trigger">Área do corretor</button>
+      <a class="whatsapp-pill" href="https://wa.me/5531999999999?text=Ol%C3%A1%21%20Quero%20atendimento%20sobre%20im%C3%B3veis." target="_blank" rel="noopener">WhatsApp</a>
+      <button class="btn btn-outline admin-trigger">Área administrativa</button>
       <button class="menu-toggle" aria-label="Abrir menu">☰</button>
     </div>
   </header>
@@ -30,78 +41,219 @@
   <main>
     <section class="hero" id="inicio">
       <div class="hero-slides" aria-hidden="true">
-        <div class="hero-slide active" style="background-image:linear-gradient(90deg,rgba(14,36,30,.92) 0%,rgba(14,36,30,.58) 48%,rgba(14,36,30,.12) 100%),url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85')"></div>
-        <div class="hero-slide" style="background-image:linear-gradient(90deg,rgba(14,36,30,.92) 0%,rgba(14,36,30,.58) 48%,rgba(14,36,30,.12) 100%),url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1800&q=85')"></div>
-        <div class="hero-slide" style="background-image:linear-gradient(90deg,rgba(14,36,30,.92) 0%,rgba(14,36,30,.58) 48%,rgba(14,36,30,.12) 100%),url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1800&q=85')"></div>
+        <div class="hero-slide active" style="background-image:linear-gradient(90deg,rgba(14,36,30,.92),rgba(14,36,30,.55),rgba(14,36,30,.1)),url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85')"></div>
+        <div class="hero-slide" style="background-image:linear-gradient(90deg,rgba(14,36,30,.92),rgba(14,36,30,.55),rgba(14,36,30,.1)),url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1800&q=85')"></div>
+        <div class="hero-slide" style="background-image:linear-gradient(90deg,rgba(14,36,30,.92),rgba(14,36,30,.55),rgba(14,36,30,.1)),url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1800&q=85')"></div>
       </div>
       <div class="hero-content">
-        <span class="eyebrow light">CURADORIA IMOBILIÁRIA</span>
-        <h1>Espaços que<br><em>combinam com você.</em></h1>
-        <p>Encontre imóveis selecionados para viver, investir e construir novos capítulos.</p>
-        <div class="hero-dots"><button class="active" aria-label="Slide 1"></button><button aria-label="Slide 2"></button><button aria-label="Slide 3"></button></div>
+        <span class="eyebrow light">WELLINGTON CORRETOR • SILVA DO NASCIMENTO</span>
+        <h1>Encontre o imóvel<br><em>ideal para você.</em></h1>
+        <p>Casas, apartamentos, terrenos e imóveis comerciais nas melhores regiões, com curadoria, financiamento e segurança do início às chaves.</p>
+        <div class="hero-actions">
+          <button class="btn btn-gold contact-trigger">Agendar atendimento →</button>
+          <button class="btn btn-light announce-trigger">Anuncie seu imóvel</button>
+        </div>
+        <div class="hero-dots">
+          <button class="active" aria-label="Slide 1"></button>
+          <button aria-label="Slide 2"></button>
+          <button aria-label="Slide 3"></button>
+        </div>
       </div>
       <form class="search-panel" id="propertySearch">
-        <div class="deal-tabs"><button type="button" class="active" data-deal="Comprar">Comprar</button><button type="button" data-deal="Alugar">Alugar</button></div>
-        <label>ONDE VOCÊ QUER MORAR?<span><i>⌖</i><input id="locationSearch" placeholder="Cidade, bairro ou condomínio"></span></label>
-        <label>TIPO DE IMÓVEL<select id="typeSearch"><option value="">Todos os tipos</option><option>Apartamento</option><option>Casa</option><option>Cobertura</option><option>Comercial</option></select></label>
-        <label>FAIXA DE PREÇO<select id="priceSearch"><option value="">Qualquer valor</option><option value="900000">Até R$ 900 mil</option><option value="1500000">Até R$ 1,5 milhão</option><option value="3000000">Até R$ 3 milhões</option></select></label>
-        <button class="btn btn-gold" type="submit">Buscar imóveis <span>→</span></button>
+        <div class="deal-tabs">
+          <button type="button" class="active" data-deal="Comprar">Comprar</button>
+          <button type="button" data-deal="Alugar">Alugar</button>
+          <button type="button" data-deal="Na planta">Na planta</button>
+        </div>
+        <label>Cidade<input id="citySearch" placeholder="Ex.: Belo Horizonte"></label>
+        <label>Bairro<input id="districtSearch" placeholder="Ex.: Lourdes"></label>
+        <label>Tipo<select id="typeSearch"><option value="">Todos</option><option>Apartamento</option><option>Casa</option><option>Cobertura</option><option>Terreno</option><option>Comercial</option><option>Chácara</option></select></label>
+        <label>Valor<select id="priceSearch"><option value="">Qualquer valor</option><option value="300000">Até R$ 300 mil</option><option value="600000">Até R$ 600 mil</option><option value="900000">Até R$ 900 mil</option><option value="1500000">Até R$ 1,5 milhão</option><option value="3000000">Até R$ 3 milhões</option></select></label>
+        <button class="btn btn-gold" type="submit">Buscar →</button>
       </form>
     </section>
 
     <section class="stats-strip">
-      <div><strong>+280</strong><span>imóveis selecionados</span></div><div><strong>12 anos</strong><span>realizando bons negócios</span></div><div><strong>98%</strong><span>de clientes satisfeitos</span></div><div><strong>4.9</strong><span>★ avaliação média</span></div>
+      <div><strong>+280</strong><span>imóveis cadastrados</span></div>
+      <div><strong>+90</strong><span>vendidos e alugados</span></div>
+      <div><strong>24h</strong><span>resposta para leads</span></div>
+      <div><strong>4.9</strong><span>★★★★★ avaliação média</span></div>
+    </section>
+
+    <section class="section quick-search" id="comprar">
+      <div class="section-head centered">
+        <div><span class="eyebrow">BUSCA RÁPIDA</span><h2>Encontre por objetivo</h2></div>
+      </div>
+      <div class="quick-grid">
+        <button data-quick="Comprar">Comprar</button>
+        <button data-quick="Alugar" id="alugar">Alugar</button>
+        <button data-quick="Lançamento">Lançamentos</button>
+        <button data-quick="Alto padrão">Alto padrão</button>
+        <button data-quick="Na planta">Na planta</button>
+        <button data-quick="Financiado">Financiados</button>
+        <button data-quick="Minha Casa Minha Vida">Minha Casa Minha Vida</button>
+      </div>
+    </section>
+
+    <section class="section categories">
+      <div class="section-head">
+        <div><span class="eyebrow">CATEGORIAS</span><h2>Imóveis para cada momento</h2></div>
+      </div>
+      <div class="category-grid">
+        <button data-type="Casa">🏠 Casas</button>
+        <button data-type="Apartamento">🏢 Apartamentos</button>
+        <button data-type="Terreno">🏞 Terrenos</button>
+        <button data-type="Comercial">🏢 Comercial</button>
+        <button data-type="Chácara">🌴 Chácaras</button>
+        <button data-type="Litoral">🏖 Litoral</button>
+      </div>
     </section>
 
     <section class="section properties-section" id="imoveis">
       <div class="section-head">
-        <div><span class="eyebrow">SELEÇÃO ESPECIAL</span><h2>Imóveis em destaque</h2><p>Escolhas que unem localização, arquitetura e qualidade de vida.</p></div>
-        <div class="head-actions"><div class="filter-chips"><button class="active" data-filter="Todos">Todos</button><button data-filter="Apartamento">Apartamentos</button><button data-filter="Casa">Casas</button></div><button class="text-link" id="showAll">Ver todos <span>↗</span></button></div>
+        <div><span class="eyebrow">PÁGINA DE IMÓVEIS</span><h2>Imóveis em destaque</h2><p>Cards com fotos, carrossel, filtros completos, favoritos, WhatsApp e paginação.</p></div>
+        <div class="head-actions">
+          <div class="filter-chips">
+            <button class="active" data-filter="Todos">Todos</button>
+            <button data-filter="Destaque">Destaques</button>
+            <button data-filter="Lançamento">Lançamentos</button>
+            <button data-filter="Oportunidade">Oportunidades</button>
+            <button data-filter="Exclusivo">Exclusivos</button>
+          </div>
+          <button class="text-link" id="showAll">Ver todos ↗</button>
+        </div>
       </div>
+
+      <form class="advanced-filters" id="advancedFilters">
+        <label>Cidade<input id="filterCity" placeholder="Cidade"></label>
+        <label>Bairro<input id="filterDistrict" placeholder="Bairro"></label>
+        <label>Preço máximo<input id="filterPrice" type="number" placeholder="R$"></label>
+        <label>Tipo<select id="filterType"><option value="">Todos</option><option>Apartamento</option><option>Casa</option><option>Cobertura</option><option>Terreno</option><option>Comercial</option><option>Chácara</option></select></label>
+        <label>Dormitórios<select id="filterBeds"><option value="">Todos</option><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
+        <label>Suítes<select id="filterSuites"><option value="">Todas</option><option>1</option><option>2</option><option>3</option></select></label>
+        <label>Banheiros<select id="filterBaths"><option value="">Todos</option><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
+        <label>Garagem<select id="filterGarage"><option value="">Todas</option><option>1</option><option>2</option><option>3</option></select></label>
+        <label>Área mínima<input id="filterArea" type="number" placeholder="m²"></label>
+        <label>Condomínio<select id="filterCondo"><option value="">Todos</option><option value="Sim">Sim</option><option value="Não">Não</option></select></label>
+        <div class="check-row">
+          <label><input id="filterPool" type="checkbox"> Piscina</label>
+          <label><input id="filterGrill" type="checkbox"> Churrasqueira</label>
+          <label><input id="filterPet" type="checkbox"> Aceita PET</label>
+          <label><input id="filterLaunch" type="checkbox"> Lançamento</label>
+          <label><input id="filterPlant" type="checkbox"> Na planta</label>
+        </div>
+        <button class="btn btn-gold" type="submit">Filtrar imóveis</button>
+      </form>
+
       <div class="property-grid" id="propertyGrid"></div>
-      <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>Nenhum imóvel encontrado</h3><p>Tente buscar por outra região ou ajustar os filtros.</p></div>
+      <div class="pagination" id="pagination"></div>
+      <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>Nenhum imóvel encontrado</h3><p>Tente ajustar os filtros ou falar com o Wellington.</p></div>
     </section>
 
     <section class="plant-section" id="na-planta">
       <div class="plant-intro">
         <div class="vic-brand"><span>VIC</span><small>ENGENHARIA</small></div>
-        <span class="eyebrow light">PARCERIA ESPECIAL</span>
+        <span class="eyebrow light">APARTAMENTOS NA PLANTA</span>
         <h2>Seu apartamento novo<br><em>começa na planta.</em></h2>
-        <p>Condições facilitadas para você sair do aluguel e conquistar um imóvel novo, com acompanhamento do Wellington em todas as etapas.</p>
-        <ul><li>Entrada facilitada</li><li>Possibilidade de usar o FGTS*</li><li>Financiamento habitacional*</li></ul>
+        <p>Condições facilitadas para sair do aluguel e conquistar seu imóvel novo, com acompanhamento do Wellington em todas as etapas.</p>
+        <ul><li>Entrada facilitada</li><li>Possibilidade de usar FGTS*</li><li>Financiamento habitacional*</li><li>Plantas inteligentes e lazer completo</li></ul>
         <button class="btn btn-gold vic-contact">Quero fazer uma simulação →</button>
-        <small class="plant-note">*Condições sujeitas à análise de crédito e às regras vigentes.</small>
+        <small class="plant-note">*Condições sujeitas à análise de crédito e regras vigentes.</small>
       </div>
       <div class="plant-showcase">
-        <div class="plant-heading"><div><span class="eyebrow">APARTAMENTOS VIC ENGENHARIA</span><h3>Escolha seu próximo endereço</h3></div><div class="plant-nav"><button id="plantPrev" aria-label="Empreendimento anterior">←</button><button id="plantNext" aria-label="Próximo empreendimento">→</button></div></div>
+        <div class="plant-heading">
+          <div><span class="eyebrow">VIC ENGENHARIA</span><h3>Lançamentos e empreendimentos</h3></div>
+          <div class="plant-nav"><button id="plantPrev" aria-label="Empreendimento anterior">←</button><button id="plantNext" aria-label="Próximo empreendimento">→</button></div>
+        </div>
         <div class="plant-cards" id="plantCards">
           <article class="plant-card"><div class="plant-image" style="background-image:url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=900&q=85')"><span>EM CONSTRUÇÃO</span><b>VIC</b></div><div class="plant-body"><small>CONTAGEM • MG</small><h4>Viva Parque Residence</h4><p>Apartamentos de 2 quartos com lazer completo e localização conectada.</p><div><span>⌂ 2 quartos</span><span>□ 42–47 m²</span></div><button class="vic-contact">Ver plantas e condições →</button></div></article>
           <article class="plant-card"><div class="plant-image" style="background-image:url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=85')"><span>LANÇAMENTO</span><b>VIC</b></div><div class="plant-body"><small>BELO HORIZONTE • MG</small><h4>Jardins do Horizonte</h4><p>Condomínio planejado com segurança, área verde e espaços para toda a família.</p><div><span>⌂ 2 quartos</span><span>□ 44–49 m²</span></div><button class="vic-contact">Ver plantas e condições →</button></div></article>
           <article class="plant-card"><div class="plant-image" style="background-image:url('https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=900&q=85')"><span>BREVE LANÇAMENTO</span><b>VIC</b></div><div class="plant-body"><small>BETIM • MG</small><h4>Reserva das Acácias</h4><p>Praticidade, lazer e parcelas pensadas para o seu primeiro imóvel.</p><div><span>⌂ 2 quartos</span><span>□ 41–46 m²</span></div><button class="vic-contact">Tenho interesse →</button></div></article>
         </div>
-        <p class="demo-note">Empreendimentos e valores ilustrativos. Substitua pelos dados comerciais oficiais da VIC Engenharia.</p>
       </div>
     </section>
 
     <section class="launch-section" id="lancamentos">
       <div class="launch-photo"><span class="launch-badge">LANÇAMENTO<br><b>2026</b></span></div>
-      <div class="launch-copy"><span class="eyebrow light">EXCLUSIVIDADE WELLINGTON SILVA</span><h2>Reserva das Oliveiras</h2><p class="launch-location">⌖ Nova Lima — MG</p><p>Um refúgio contemporâneo cercado pela natureza, com arquitetura autoral e uma vista que muda o ritmo dos seus dias.</p><div class="launch-features"><span><b>4</b> suítes</span><span><b>320–480</b> m²</span><span><b>28</b> unidades</span></div><button class="btn btn-light contact-trigger">Conheça o lançamento →</button></div>
+      <div class="launch-copy"><span class="eyebrow light">EXCLUSIVIDADE WELLINGTON SILVA</span><h2>Reserva das Oliveiras</h2><p class="launch-location">⌖ Nova Lima — MG</p><p>Um refúgio contemporâneo cercado pela natureza, com arquitetura autoral, alto padrão e vista privilegiada.</p><div class="launch-features"><span><b>4</b> suítes</span><span><b>320–480</b> m²</span><span><b>28</b> unidades</span></div><button class="btn btn-light contact-trigger">Conheça o lançamento →</button></div>
     </section>
 
-    <section class="section services" id="sobre">
-      <div class="section-head centered"><div><span class="eyebrow">DO INÍCIO ÀS CHAVES</span><h2>Um jeito mais humano de encontrar seu imóvel</h2></div></div>
-      <div class="service-grid"><article><span>⌕</span><h3>Curadoria personalizada</h3><p>Entendemos seu momento para apresentar imóveis que realmente fazem sentido.</p></article><article><span>◇</span><h3>Negociação segura</h3><p>Cuidamos de cada detalhe jurídico e financeiro com transparência.</p></article><article><span>⌂</span><h3>Acompanhamento completo</h3><p>Da primeira visita à entrega das chaves, você nunca está sozinho.</p></article></div>
+    <section class="section why-section" id="sobre">
+      <div class="section-head centered"><div><span class="eyebrow">POR QUE ESCOLHER NOSSA IMOBILIÁRIA</span><h2>Atendimento humano, processo seguro e resultado claro</h2></div></div>
+      <div class="why-grid">
+        <article><span>✔</span><h3>Atendimento personalizado</h3><p>Busca orientada para seu momento, orçamento e região desejada.</p></article>
+        <article><span>✔</span><h3>Aprovação de financiamento</h3><p>Pré-análise e simulação para comprar com mais previsibilidade.</p></article>
+        <article><span>✔</span><h3>Segurança jurídica</h3><p>Apoio com documentação, proposta, contrato e transferência.</p></article>
+        <article><span>✔</span><h3>Avaliação gratuita</h3><p>Quer vender ou alugar? Receba uma avaliação inicial do imóvel.</p></article>
+        <article><span>✔</span><h3>Mais de 280 imóveis</h3><p>Opções para compra, aluguel, lançamento e imóveis na planta.</p></article>
+      </div>
     </section>
 
-    <section class="cta-section"><div><span class="eyebrow light">ATENDIMENTO EXCLUSIVO</span><h2>Vamos encontrar o seu próximo lugar?</h2><p>Conte o que você procura. Um de nossos especialistas entra em contato.</p></div><button class="btn btn-gold contact-trigger">Falar com um especialista →</button></section>
+    <section class="section calculators">
+      <div class="section-head">
+        <div><span class="eyebrow">FUNCIONALIDADES</span><h2>Ferramentas que impressionam o cliente</h2><p>Favoritos, comparação, compartilhamento, visitas, financiamento, mapas e atendimento rápido.</p></div>
+      </div>
+      <div class="tools-grid">
+        <article><h3>Simulador de financiamento</h3><label>Valor do imóvel<input id="calcValue" type="number" value="350000"></label><label>Entrada<input id="calcDown" type="number" value="70000"></label><label>Meses<input id="calcMonths" type="number" value="360"></label><button class="btn btn-outline" id="calcBtn">Calcular parcela</button><strong id="calcResult">Parcela estimada: R$ 0</strong></article>
+        <article><h3>Comparar imóveis</h3><p>Selecione favoritos e veja opções lado a lado para decidir com segurança.</p><button class="btn btn-gold favorites-trigger-inline">Ver favoritos</button></article>
+        <article><h3>Avisos por e-mail</h3><p>Receba novos imóveis por região, tipo e faixa de preço.</p><button class="btn btn-outline contact-trigger">Cadastrar aviso</button></article>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="section-head centered"><div><span class="eyebrow">DEPOIMENTOS</span><h2>Clientes que confiaram no processo</h2></div></div>
+      <div class="testimonial-grid">
+        <article><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=220&q=80" alt="Cliente Ana Paula"><span>★★★★★</span><h3>Ana Paula</h3><p>“O Wellington filtrou tudo que fazia sentido para mim. Fechei meu apartamento com tranquilidade.”</p></article>
+        <article><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=220&q=80" alt="Cliente Rafael Mendes"><span>★★★★★</span><h3>Rafael Mendes</h3><p>“Atendimento rápido, documentação bem explicada e negociação segura do começo ao fim.”</p></article>
+        <article><img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=220&q=80" alt="Cliente Camila Rocha"><span>★★★★★</span><h3>Camila Rocha</h3><p>“Gostei muito da simulação de financiamento e das opções na planta da VIC Engenharia.”</p></article>
+      </div>
+    </section>
+
+    <section class="section regions">
+      <div class="section-head">
+        <div><span class="eyebrow">REGIÕES ATENDIDAS</span><h2>Atuação nas melhores cidades e bairros</h2></div>
+      </div>
+      <div class="region-layout">
+        <div class="map-card"><iframe title="Mapa de regiões atendidas" loading="lazy" src="https://www.google.com/maps?q=Belo%20Horizonte%20MG&output=embed"></iframe></div>
+        <div class="region-grid">
+          <button>São Paulo</button><button>Osasco</button><button>Barueri</button><button>Jundiaí</button><button>Belo Horizonte</button><button>Contagem</button><button>Betim</button><button>Nova Lima</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section blog" id="blog">
+      <div class="section-head">
+        <div><span class="eyebrow">BLOG IMOBILIÁRIO</span><h2>Conteúdo para comprar, vender e financiar melhor</h2></div>
+      </div>
+      <div class="blog-grid">
+        <article><span>Financiamento</span><h3>Como se preparar para aprovar seu crédito</h3><p>Documentos, entrada, renda e cuidados antes da proposta.</p></article>
+        <article><span>Na planta</span><h3>Vantagens de comprar apartamento na planta</h3><p>Planejamento, fluxo de pagamento e acompanhamento da obra.</p></article>
+        <article><span>Venda</span><h3>Como anunciar seu imóvel com fotos que vendem</h3><p>Preparação, descrição, preço e divulgação profissional.</p></article>
+      </div>
+    </section>
+
+    <section class="cta-section" id="contato">
+      <div><span class="eyebrow light">ATENDIMENTO EXCLUSIVO</span><h2>Vamos encontrar o seu próximo lugar?</h2><p>Fale com Wellington Silva do Nascimento pelo WhatsApp ou envie seus dados.</p></div>
+      <div class="cta-actions"><a class="btn btn-light" href="https://wa.me/5531999999999?text=Ol%C3%A1%21%20Tenho%20interesse%20em%20um%20im%C3%B3vel." target="_blank" rel="noopener">Chamar no WhatsApp</a><button class="btn btn-gold contact-trigger">Solicitar contato →</button></div>
+    </section>
   </main>
 
-  <footer><div class="footer-top"><a class="brand light-brand" href="#inicio"><span class="brand-mark">WS</span><span>Wellington Silva<small>imóveis</small></span></a><p>Imóveis escolhidos com propósito.<br>Bons negócios construídos com confiança.</p><div><b>Navegue</b><a href="#imoveis">Comprar</a><a href="#imoveis">Alugar</a><a href="#lancamentos">Lançamentos</a></div><div><b>Contato</b><a href="tel:+553132221900">(31) 3222-1900</a><a href="mailto:contato@wellingtonsilvaimoveis.com.br">contato@wellingtonsilvaimoveis.com.br</a><span>Belo Horizonte — MG</span></div></div><div class="footer-bottom"><span>© 2026 Wellington Silva Imóveis. CRECI 00000-F</span><span>Instagram &nbsp; LinkedIn</span></div></footer>
+  <footer>
+    <div class="footer-top">
+      <a class="brand light-brand" href="#inicio"><span class="brand-mark">WS</span><span>Wellington Silva<small>imóveis</small></span></a>
+      <p>Imóveis escolhidos com propósito. Bons negócios construídos com confiança, tecnologia e acompanhamento próximo.</p>
+      <div><b>Navegue</b><a href="#comprar">Comprar</a><a href="#alugar">Alugar</a><a href="#na-planta">Na planta</a><a href="#blog">Blog</a></div>
+      <div><b>Contato</b><a href="tel:+5531999999999">(31) 99999-9999</a><a href="mailto:contato@wellingtonsilvaimoveis.com.br">contato@wellingtonsilvaimoveis.com.br</a><span>Belo Horizonte — MG</span><span>Instagram • Facebook • LinkedIn</span></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Wellington Silva Imóveis. CRECI 00000-F</span><span>SEO • Open Graph • Analytics • Meta Pixel prontos para integração</span></div>
+  </footer>
+
+  <div class="floating-whatsapp"><a href="https://wa.me/5531999999999?text=Ol%C3%A1%21%20Quero%20falar%20com%20Wellington%20sobre%20im%C3%B3veis." target="_blank" rel="noopener">☘ WhatsApp</a></div>
 
   <div class="modal" id="propertyModal" aria-hidden="true"><div class="modal-card property-detail"><button class="modal-close" aria-label="Fechar">×</button><div id="propertyModalContent"></div></div></div>
-  <div class="modal" id="contactModal" aria-hidden="true"><div class="modal-card form-card"><button class="modal-close" aria-label="Fechar">×</button><span class="eyebrow">FALE COM A GENTE</span><h2>Como podemos ajudar?</h2><p>Preencha seus dados e retornaremos em breve.</p><form id="contactForm"><label>Nome<input required placeholder="Seu nome"></label><label>Telefone<input required placeholder="(00) 00000-0000"></label><label>Interesse<select id="interestSelect"><option>Comprar um imóvel</option><option>Apartamento na planta — VIC Engenharia</option><option>Alugar um imóvel</option><option>Anunciar meu imóvel</option><option>Conhecer um lançamento</option></select></label><button class="btn btn-gold" type="submit">Solicitar contato →</button></form></div></div>
-  <div class="modal" id="adminModal" aria-hidden="true"><div class="modal-card admin-card"><button class="modal-close" aria-label="Fechar">×</button><aside><div class="brand"><span class="brand-mark">WS</span><span>Wellington Silva<small>gestão</small></span></div><nav><button class="active" data-admin="dashboard">▦ Visão geral</button><button data-admin="properties">⌂ Imóveis</button><button data-admin="leads">◎ Contatos</button></nav><div class="admin-user"><span>WN</span><div><b>Wellington Nascimento</b><small>Corretor de imóveis</small></div></div></aside><section id="adminContent"></section></div></div>
+  <div class="modal" id="contactModal" aria-hidden="true"><div class="modal-card form-card"><button class="modal-close" aria-label="Fechar">×</button><span class="eyebrow">FALE COM A GENTE</span><h2>Como podemos ajudar?</h2><p>Preencha seus dados e retornaremos em breve.</p><form id="contactForm"><label>Nome<input required placeholder="Seu nome"></label><label>Telefone<input required placeholder="(00) 00000-0000"></label><label>Email<input type="email" placeholder="voce@email.com"></label><label>Interesse<select id="interestSelect"><option>Comprar um imóvel</option><option>Apartamento na planta — VIC Engenharia</option><option>Alugar um imóvel</option><option>Anunciar meu imóvel</option><option>Conhecer um lançamento</option><option>Solicitar financiamento</option><option>Agendar visita</option></select></label><label>Mensagem<textarea placeholder="Conte o que você procura"></textarea></label><button class="btn btn-gold" type="submit">Solicitar contato →</button></form></div></div>
+  <div class="modal" id="adminModal" aria-hidden="true"><div class="modal-card admin-card"><button class="modal-close" aria-label="Fechar">×</button><aside><div class="brand"><span class="brand-mark">WS</span><span>Wellington Silva<small>gestão</small></span></div><nav><button class="active" data-admin="dashboard">▦ Dashboard</button><button data-admin="properties">⌂ Imóveis</button><button data-admin="brokers">◎ Corretores</button><button data-admin="leads">◉ Leads</button><button data-admin="blog">✎ Blog</button><button data-admin="banners">▣ Banners/SEO</button><button data-admin="users">⚿ Usuários</button><button data-admin="settings">⚙ Configurações</button></nav><div class="admin-user"><span>WN</span><div><b>Wellington Nascimento</b><small>Administrador • Corretor</small></div></div></aside><section id="adminContent"></section></div></div>
   <div class="toast" id="toast"></div>
-  <script src="script.js?v=2"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>
